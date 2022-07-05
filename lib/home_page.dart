@@ -2,6 +2,7 @@ import 'package:alphabets_app/database_helper.dart';
 import 'package:alphabets_app/database_helper2.dart';
 import 'package:alphabets_app/models/alphabet.dart';
 import 'package:alphabets_app/models/user.dart';
+import 'package:alphabets_app/sign_in_page.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -146,7 +147,9 @@ class _HomePageState extends State<HomePage> {
             )),
         const SizedBox(height: 20),
         ElevatedButton(
-          onPressed: () {},
+          onPressed: () { Navigator.of(context).push(MaterialPageRoute(
+              fullscreenDialog: true,
+              builder: (context) => const SignInPage()));},
           style: ButtonStyle(
             backgroundColor: MaterialStateProperty.all<Color>(Colors.red),
           ),
