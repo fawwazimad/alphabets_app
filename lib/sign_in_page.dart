@@ -48,7 +48,6 @@ class SignInPage extends StatelessWidget {
       child: const Padding(
         padding: EdgeInsets.only(left: 16.0),
         child: TextField(
-          //controller: _emailController,
           textAlign: TextAlign.start,
           decoration: InputDecoration(
             border: InputBorder.none,
@@ -56,8 +55,6 @@ class SignInPage extends StatelessWidget {
           ),
           keyboardType: TextInputType.emailAddress,
           textInputAction: TextInputAction.next,
-          //focusNode: _emailFocusNode,
-          //onEditingComplete: (){_emailEditingComplete(context);},
         ),
       ),
     );
@@ -70,14 +67,12 @@ class SignInPage extends StatelessWidget {
       child: const Padding(
         padding: EdgeInsets.only(left: 16.0),
         child: TextField(
-          // controller: _passwordController,
           textAlign: TextAlign.start,
           decoration: InputDecoration(
             border: InputBorder.none,
             hintText: 'Password',
           ),
           obscureText: true,
-          // focusNode: _passwordFocusNode,
         ),
       ),
     );

@@ -9,7 +9,8 @@ class LandingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    if (user != null) {
+    //change the ! with = to see the sign in page
+     if (user != null) {
       return const SignInPage();
     }
     return const HomePage();
