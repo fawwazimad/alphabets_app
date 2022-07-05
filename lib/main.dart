@@ -2,6 +2,7 @@
 import 'package:alphabets_app/landing_page.dart';
 import 'package:flutter/material.dart';
 
+
 void main() {
   runApp(const AlphabetsApp());
 }
@@ -11,7 +12,7 @@ class AlphabetsApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Alphabets App',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
